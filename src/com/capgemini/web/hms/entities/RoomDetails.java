@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 
 @Entity
 public class RoomDetails {
@@ -15,8 +14,7 @@ public class RoomDetails {
 
 	@Id
 	@Column(name = "room_id")
-	@SequenceGenerator(name = "roomSeq", sequenceName = "user_seq", initialValue = 1)
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "roomSeq")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
 	@Column(name = "room_no")

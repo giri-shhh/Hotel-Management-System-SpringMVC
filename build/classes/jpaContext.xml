@@ -16,10 +16,10 @@
 	<!-- This bean will hold references to our database -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
-		<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl" />
-		<property name="username" value="system" />
-		<property name="password" value="system" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/hoteldetails" />
+		<property name="username" value="newuser" />
+		<property name="password" value="girisha077" />
 	</bean>
 
 	<!-- Spring way of entity manager factory configuration -->
@@ -32,7 +32,7 @@
 			value="org.hibernate.jpa.HibernatePersistenceProvider" />
 		<property name="jpaPropertyMap">
 			<map>
-				<entry key="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+				<entry key="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 				<entry key="hibernate.hbm2ddl.auto" value="update" />
 			</map>
 		</property>

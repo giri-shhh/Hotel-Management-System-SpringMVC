@@ -88,3 +88,9 @@ CREATE SEQUENCE ROOM_SEQ START WITH 1;
 
 DROP SEQUENCE BOOK_SEQ;
 CREATE SEQUENCE BOOK_SEQ START WITH 1;
+
+select * from users
+select * from hotel
+
+show databases
+use hoteldetails

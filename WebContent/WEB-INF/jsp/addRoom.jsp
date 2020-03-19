@@ -85,6 +85,8 @@ body {
 
 .tz-gallery .lightbox img {
 	border-radius: 4px 4px 0 0;
+	width: 400px;
+	height: 220px;
 }
 
 .tz-gallery .caption {

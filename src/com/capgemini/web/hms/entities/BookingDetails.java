@@ -7,13 +7,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 
 @Entity
 public class BookingDetails {
+	
 	@Id
-	@SequenceGenerator(name = "BookingSequence", sequenceName = "BOOK_SEQ")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BookingSequence")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "booking_id")
 	private int id;
 

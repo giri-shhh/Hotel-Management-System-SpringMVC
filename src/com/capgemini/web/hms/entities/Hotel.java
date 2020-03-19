@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
@@ -13,8 +12,7 @@ import javax.persistence.Table;
 public class Hotel {
 	@Id
 	@Column(name = "Hotel_id")
-	@SequenceGenerator(name = "hotelSeq", sequenceName = "hotel_seq")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "hotelSeq")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
 	@Column(name = "city")

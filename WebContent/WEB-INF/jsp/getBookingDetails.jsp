@@ -37,7 +37,6 @@ body {
 .product-list-vertical {
 	margin-top: 60px;
 	list-style: none;
-	margin: 0 auto;
 	max-width: 1366px;
 	padding: 0;
 	height: 650px;
